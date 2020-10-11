@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmarRegistro">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="@dimen/tamaño_titulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_sup_confirmacion"
+        android:text="@string/nombre_completo"
+        android:textSize="@dimen/tamaño_titulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elije_fecha"
+        android:textSize="@dimen/tamaño_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        android:textSize="@dimen/tamaño_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvFecha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="@dimen/tamaño_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:textSize="@dimen/tamaño_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_editar"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescripcion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

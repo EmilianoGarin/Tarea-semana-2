@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margen_sup_confirmacion">188dp</dimen>
+    <dimen name="tamaño_titulo">30sp</dimen>
+    <dimen name="ancho_cardview">200dp</dimen>
+    <dimen name="altura_cardview">200dp</dimen>
+
+</resources>
